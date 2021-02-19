@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Derive</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body style="background-color: #1A1E23;">
+    <ul>
+        <li><a class='grow menu-text' href="{{ url_for('first_band') }}">{{band_names[0]}}</a></li>
+        <li><a class='grow menu-text' href="{{ url_for('second_band') }}">{{band_names[1]}}</a></li>
+        <li><a class='grow menu-text' href="{{ url_for('third_band') }}">{{band_names[2]}}</a></li>
+        <li><a class='grow menu-text' href="{{ url_for('fourth_band') }}">{{band_names[3]}}</a></li>
+        <li><a class='grow menu-text' href="{{ url_for('fifth_band') }}">{{band_names[4]}}</a></li>
+    </ul>
+</body>
+</html>

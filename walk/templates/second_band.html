@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{band_name}}</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <!-- <link rel="stylesheet" href="../static/style.css"> -->
+</head>
+<body class="body" style='background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("{{image}}");'>
+    <div class="row navbar">
+            <a class='grow menu-text' href="{{ url_for('first_band') }}">{{band_names[0]}}</a>
+            <a class='grow menu-text' href="{{ url_for('second_band') }}">{{band_names[1]}}</a>
+            <a class='grow menu-text' href="{{ url_for('third_band') }}">{{band_names[2]}}</a>
+            <a class='grow menu-text' href="{{ url_for('fourth_band') }}">{{band_names[3]}}</a>
+            <a class='grow menu-text' href="{{ url_for('fifth_band') }}">{{band_names[4]}}</a>
+    </div>
+    <div class="main">
+    <!-- <div class="main" style="background: '{{image}}';"> -->
+        <h2>{{lines[0]}}</h2>
+        <h2>{{lines[1]}}</h2>
+        <h2>{{lines[2]}}</h2>
+    </div>
+</body>
+</html>
